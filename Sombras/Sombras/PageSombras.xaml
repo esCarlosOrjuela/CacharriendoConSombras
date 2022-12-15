@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Sharpnado="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    x:Class="Sombras.PageSombras"
+    ios:Page.UseSafeArea="True">
+
+    <Grid Padding="27">
+        <StackLayout Spacing="27">
+            <Sharpnado:Shadows CornerRadius="50" Shades="{Sharpnado:SingleShade Offset='0,10',Opacity=0.8, Color=#009BE8}">
+                <ImageButton
+                    CornerRadius="50"
+                    WidthRequest="100"
+                    HeightRequest="100"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    BackgroundColor="#009BE8"
+                    />
+            </Sharpnado:Shadows>
+
+            <Sharpnado:Shadows Shades="{Sharpnado:SingleShade Offset='0,10',Opacity=0.8, Color=#ffC545}">
+                <Frame
+                    HasShadow="False"
+                    CornerRadius="15"
+                    WidthRequest="60"
+                    HeightRequest="60"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    BackgroundColor="#ffC545"/>
+            </Sharpnado:Shadows>
+
+            <Sharpnado:Shadows Shades="{Sharpnado:SingleShade Offset='0,10',Opacity=0.8, Color=#FF2D36}">
+                <BoxView
+                    CornerRadius="15"
+                    WidthRequest="60"
+                    HeightRequest="60"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    BackgroundColor="#FF2D36"/>
+            </Sharpnado:Shadows>
+        </StackLayout>
+    </Grid>
+</ContentPage>
+
