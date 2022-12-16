@@ -8,8 +8,12 @@
     ios:Page.UseSafeArea="True">
 
     <Grid Padding="27">
-        <StackLayout Spacing="27">
-            <Sharpnado:Shadows CornerRadius="50" Shades="{Sharpnado:SingleShade Offset='0,10',Opacity=0.8, Color=#009BE8}">
+        <StackLayout
+            Spacing="27"
+            VerticalOptions="Center">
+            <Sharpnado:Shadows
+                CornerRadius="50"
+                Shades="{Sharpnado:SingleShade Offset='0,10',Opacity=0.8, Color=#009BE8}">
                 <ImageButton
                     CornerRadius="50"
                     WidthRequest="100"
